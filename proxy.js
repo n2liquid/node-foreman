@@ -8,6 +8,8 @@ var http    = require('http');
 var https   = require('https');
 var htproxy = require('http-proxy');
 
+var cons = require('./lib/console').Console;
+
 var port = parseInt(process.env.PORT);
 
 var upstream_host = process.env.UPSTREAM_HOST;
@@ -51,6 +53,12 @@ http.createServer(function (req, res) {
 
   addresses.push(target);
 
+}).on('error', function(err) {
+  if (err.code !== 'EACCES') {
+    throw err;
+  }
+
+  cons.Error('Could Not Bind to Port %s', port);
 }).listen(port, function() {
   process.send({http: this.address().port});
 });
