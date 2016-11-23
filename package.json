@@ -1,7 +1,7 @@
 {
-  "name": "foreman",
+  "name": "foremantis",
   "version": "2.0.0",
-  "homepage": "http://strongloop.github.io/node-foreman/",
+  "homepage": "http://github.com/n2liquid/node-foremantis",
   "description": "Node Implementation of Foreman",
   "author": "StrongLoop, Inc.",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "Procfile"
   ],
   "bin": {
-    "nf": "nf.js"
+    "nftis": "nf.js"
   },
   "files": [
     "forward.js",
@@ -33,11 +33,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/node-foreman.git"
+    "url": "https://github.com/n2liquid/node-foremantis.git"
   },
   "bugs": {
-    "url": "https://github.com/strongloop/node-foreman/issues",
-    "email": "callback@strongloop.com"
+    "url": "https://github.com/n2liquid/node-foremantis/issues",
+    "email": "super.driver.512@gmail.com"
   },
   "engines": {
     "node": ">=0.6.9"
